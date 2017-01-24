@@ -1,0 +1,3 @@
+#ignore mp3s and parts in this dir for testing
+*.mp3
+*.part
