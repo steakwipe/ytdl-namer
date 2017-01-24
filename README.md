@@ -1,3 +1,5 @@
+by @steakwipe with way too much help from beatsteak
+
 Uses youtube-dl and eventually some script-fu to download MP3 files from YouTube, and process the filenames and tags to be more useful.
 
 This script expects a file named 'list' containing a list of YT URLs. Eats anything yt-dl can, probably.
@@ -45,4 +47,4 @@ TODO Section; not keeping a separate file for now due to the small size of the p
      From there we can pass it along to mutagen. The main tag we're looking
      to set in Mutagen is TPE2. This is known as the Band/Orchestra tag,
      or more commonly "Album Artist". This is the unpopular tag that we
-     will utilize for our URL.
+     will utilize for our URL, no idea how to do that yet but it doesn't look hard.

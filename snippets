@@ -1,0 +1,18 @@
+handy bits of code from tuts for reference. python is pretty dope
+
+Lines 3-18 | src http://www.diveintopython.net/file_handling/for_loops.html
+
+Example 6.11. for Loop in MP3FileInfo
+
+    tagDataMap = {"title"   : (  3,  33, stripnulls),
+                  "artist"  : ( 33,  63, stripnulls),
+                  "album"   : ( 63,  93, stripnulls),
+                  "year"    : ( 93,  97, stripnulls),
+                  "comment" : ( 97, 126, stripnulls),
+                  "genre"   : (127, 128, ord)}                               1
+    .
+    .
+    .
+            if tagdata[:3] == "TAG":
+                for tag, (start, end, parseFunc) in self.tagDataMap.items(): 2
+                    self[tag] = parseFunc(tagdata[start:end])

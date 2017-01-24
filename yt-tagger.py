@@ -5,6 +5,9 @@
 # ##steakhouse // #ninjapirate // freenode
 # commenty var reminders for now
 
+## this'll be the script i slap everything else into later.
+
+
 # yt="https://youtu.be/"
 # name=specific filename
 # URL=garbly part
@@ -18,12 +21,3 @@ musdir = "/home/steakwipe/git/ytdl-namer"
 thelist = "glob(musdir/*.mp3)"
 
 
-def mp3gen():
-    for root, dirs, files in os.walk('[musdir]'):
-        for filename in files:
-            if os.path.splitext(filename)[1] == ".mp3":
-                yield os.path.join(root, filename)
-
-
-for mp3file in mp3gen():
-    print mp3file
