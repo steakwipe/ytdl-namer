@@ -1,0 +1,3 @@
+* expand script to support all mpris2 players, apparently not too complicated.
+* learn to fucking sed/grep jesus christ dude you've been a cli commando for like 15 years
+* split filenames ARTIST - TITLE - YTLINK.mp3 to $1 $2 and $3, feed back into file as metadata via mid3v2
